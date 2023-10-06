@@ -1,3 +1,12 @@
+:root{
+  --theme1: #2D060B;
+  --theme2: #92243D;
+  --theme3: #d4324a;
+  --theme4: #FBA7AA;
+  --theme5: #800D98;
+  --theme-radius: 8px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -20,4 +29,73 @@ h6 {
 
 p {
   margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color:var(--theme1)
+}
+
+a:hover{
+  color:var(--theme3) 
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  min-height: 6rem;
+  min-width: 100vw;
+  padding: 1rem 0rem;
+  background-color: var(--theme5);
+  align-items: flex-end;
+}
+
+.header-card-style{
+  margin: 0 2rem;
+  padding: 0.5rem 1rem;
+  color: var(--theme1);
+  background-color: var(--theme4);
+  border-radius: var(--theme-radius);
+}
+
+.nav-bar ul{
+  display: flex;
+  list-style: none;
+  margin: 0.5rem 0;
+  padding: 0;
+}
+
+.nav-bar li{
+  display: flex;
+  margin: 0 0.8rem 0 0.8rem;
+  font-size: 1.2rem;
+}
+
+.backdrop{
+  position: relative;
+  min-height: 12rem;
+  min-width: 100vw;
+  background-color: var(--theme5);
+}
+
+.hero-banner{
+  position: absolute;
+  min-height: 12rem;
+  min-width: 100vw;
+  background-image: url("../images/02-hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+  opacity: 0.77;
+}
+
+.hero-banner h2{
+  position: absolute;
+  right: 2rem;
+  bottom: 1rem;
+  padding: 1rem;
+  background-color: var(--theme5);
+  color: var(--theme4);
+  border-radius: var(--theme-radius);
+  font-size: 1.8rem;
 }
