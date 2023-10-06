@@ -16,6 +16,7 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  background-color: var(--theme5);
 }
 
 h1,
@@ -58,7 +59,7 @@ a:hover{
   border-radius: var(--theme-radius);
 }
 
-.nav-bar ul{
+.nav-bar ul, .contact-details ul{
   display: flex;
   list-style: none;
   margin: 0.5rem 0;
@@ -71,6 +72,14 @@ a:hover{
   font-size: 1.2rem;
 }
 
+.contact-details{
+  width: 1120px;
+  font-size: 20px;
+}
+
+.contact-details li{
+  margin-left: 10%;
+}
 .backdrop{
   position: relative;
   min-height: 12rem;
@@ -86,7 +95,8 @@ a:hover{
   background-size: cover;
   background-position: center;
   background-repeat: none;
-  opacity: 0.77;
+  opacity: 0.66;
+  z-index: 1;
 }
 
 .hero-banner h2{
@@ -98,4 +108,88 @@ a:hover{
   color: var(--theme4);
   border-radius: var(--theme-radius);
   font-size: 1.8rem;
+  z-index: 2;
+}
+
+.page-wrapper{
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 4rem;
+  padding: 0rem 2rem;
+  background-color: var(--theme4);
+  border-radius: var(--theme-radius);
+}
+
+.page-section{
+ position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  color: var(--theme5);
+}
+
+#about{ 
+
+  min-height: 8rem;
+
+}
+
+.page-section h2{
+  flex-grow: 1;
+  padding: 0rem 3rem 0rem 6rem; 
+  border-left: 4px solid var(--theme5);
+  height: auto;
+}
+
+.sub-section{
+  border-left: 4px solid var(--theme5);
+  padding: 0rem 6rem;
+  width: 80rem;
+}
+
+.card-grid{
+  display:grid;
+  height: auto;
+  width: 50vw;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 30rem 20rem 20rem;
+  grid-template-areas: 
+    "main-card main-card"
+    "sub-card1 sub-card2"
+    "sub-card3 sub-card4";
+}
+
+#main-card{
+  grid-area: main-card;
+  background-image: url("../images/02-portfolio-1.jpg");
+  border-radius: var(--theme-radius);
+  margin: 1rem 0.75rem;
+}
+
+#sub-card1{
+  grid-area: sub-card1;
+  background-image: url("../images/02-portfolio-2.jpg");
+}
+
+#sub-card2{
+  grid-area: sub-card2;
+  background-image: url("../images/02-portfolio-3.jpg");
+}
+
+#sub-card3{
+  grid-area: sub-card3;
+  background-image: url("../images/02-portfolio-4.jpg");
+}
+
+#sub-card4{
+  grid-area: sub-card4;
+  background-image: url("../images/02-run-buddy.jpg");
+}
+
+.sub-image-style{
+  border-radius: var(--theme-radius);
+  margin: 0.75rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
