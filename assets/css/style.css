@@ -238,3 +238,7 @@ img{
   inset 0px 0px 12px rgb(90, 13, 54),
         0px 0px 23px rgb(110, 13, 65);
 }
+
+.contact a:hover{
+  color: var(--theme5);
+}
