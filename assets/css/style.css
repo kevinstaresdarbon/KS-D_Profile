@@ -87,14 +87,24 @@ img{
 
 .backdrop{
   position: relative;
-  min-height: 12rem;
+  min-height: 16rem;
   min-width: 100vw;
   background-color: var(--theme5);
 }
 
+.profile-image{
+  position: absolute;
+  top: 2rem;
+  left: 4rem;
+  width: 200px;
+  height: 200px;
+  border-radius: var(--theme-radius);
+  z-index: 2;
+}
+
 .hero-banner{
   position: absolute;
-  min-height: 12rem;
+  min-height: 16rem;
   min-width: 100vw;
   background-image: url("../images/02-hero-bg.jpg");
   background-size: cover;
@@ -106,8 +116,8 @@ img{
 
 .hero-banner h2{
   position: absolute;
-  right: 2rem;
-  bottom: 1rem;
+  right: 4rem;
+  bottom: 2rem;
   padding: 1rem;
   background-color: var(--theme5);
   color: var(--theme4);
