@@ -230,8 +230,9 @@ img {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 80%;
-  height: 100%;
+  width: 99%;
+  height: 98%;
+  border: 2px solid black;
 }
 
 
@@ -242,7 +243,6 @@ img {
 #sub-card4 {
   transition: all 0.4s ease-in-out;
   border-radius: var(--theme-radius);
-  border: 2px dashed var(--theme1);
 }
 
 #main-card:hover,
