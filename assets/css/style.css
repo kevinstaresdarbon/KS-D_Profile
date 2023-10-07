@@ -209,15 +209,6 @@ img {
   position: relative;
 }
 
-#main-card,
-#sub-card1,
-#sub-card2,
-#sub-card3,
-#sub-card4 {
-  transition: all 0.4s ease-in-out;
-  border-radius: var(--theme-radius);
-}
-
 .title-overlay {
   position: absolute;
   bottom: 2rem;
@@ -239,8 +230,19 @@ img {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 80%;
   height: 100%;
+}
+
+
+#main-card,
+#sub-card1,
+#sub-card2,
+#sub-card3,
+#sub-card4 {
+  transition: all 0.4s ease-in-out;
+  border-radius: var(--theme-radius);
+  border: 2px dashed var(--theme1);
 }
 
 #main-card:hover,
@@ -275,7 +277,6 @@ img {
   .card-grid {
     display: grid;
     height: auto;
-    width: 60vw;
     grid-template-columns: 1fr;
     grid-template-rows: 28rem 20rem 20rem 20rem 20rem;
     grid-template-areas:
