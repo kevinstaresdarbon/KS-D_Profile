@@ -80,6 +80,7 @@ a:hover{
 .contact-details li{
   margin-left: 10%;
 }
+
 .backdrop{
   position: relative;
   min-height: 12rem;
@@ -142,7 +143,6 @@ a:hover{
 }
 
 .sub-section{
-  border-left: 4px solid var(--theme5);
   padding: 0rem 6rem;
   width: 80rem;
 }
@@ -162,28 +162,26 @@ a:hover{
 #main-card{
   grid-area: main-card;
   background-image: url("../images/02-portfolio-1.jpg");
-  border-radius: var(--theme-radius);
-  margin: 1rem 0.75rem;
 }
 
 #sub-card1{
   grid-area: sub-card1;
-  background-image: url("../images/02-portfolio-2.jpg");
+  background-image: url("../images/02-portfolio-3.jpg");
 }
 
 #sub-card2{
   grid-area: sub-card2;
-  background-image: url("../images/02-portfolio-3.jpg");
+  background-image: url("../images/02-portfolio-2.jpg");
 }
 
 #sub-card3{
   grid-area: sub-card3;
-  background-image: url("../images/02-portfolio-4.jpg");
+  background-image: url("../images/02-run-buddy.jpg");
 }
 
 #sub-card4{
   grid-area: sub-card4;
-  background-image: url("../images/02-run-buddy.jpg");
+  background-image: url("../images/02-portfolio-4.jpg");
 }
 
 .sub-image-style{
@@ -192,4 +190,11 @@ a:hover{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  transition: all 0.6s ease-in-out;
+}
+
+.sub-image-style:hover{
+  box-shadow: 
+  inset 0px 0px 12px rgb(90, 13, 54),
+        0px 0px 23px rgb(110, 13, 65);
 }
