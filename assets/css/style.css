@@ -161,12 +161,12 @@ a:hover{
 
 #main-card{
   grid-area: main-card;
-  background-image: url("../images/02-portfolio-1.jpg");
+  background-image: url("../images/simon-game.jpg");
 }
 
 #sub-card1{
   grid-area: sub-card1;
-  background-image: url("../images/02-portfolio-3.jpg");
+  background-image: url("../images/css-snippets.jpg");
 }
 
 #sub-card2{
@@ -176,7 +176,7 @@ a:hover{
 
 #sub-card3{
   grid-area: sub-card3;
-  background-image: url("../images/02-run-buddy.jpg");
+  background-image: url("../images/02-portfolio-1.jpg");
 }
 
 #sub-card4{
