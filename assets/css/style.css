@@ -101,7 +101,7 @@ img {
 .profile-image {
   position: absolute;
   top: 2rem;
-  left: 4rem;
+  left: 3rem;
   width: 200px;
   height: 200px;
   border-radius: var(--theme-radius);
@@ -124,7 +124,7 @@ img {
   position: absolute;
   right: 4rem;
   bottom: 2rem;
-  padding: 1rem 0;
+  padding: 1rem 1rem;
   background-color: var(--theme5);
   color: var(--theme4);
   border-radius: var(--theme-radius);
@@ -163,7 +163,7 @@ img {
 }
 
 .sub-section {
-  padding: 0rem 6rem;
+  padding: 0rem 3rem;
   width: 80rem;
 }
 
@@ -257,6 +257,20 @@ img {
   color: var(--theme5);
 }
 
+.contact-details li{
+  margin-left: 2vw;
+}
+
+.contact-details.sub-section{
+  margin-left: 0rem;
+  padding: 0rem;
+} 
+
+.sub-section ul{
+  margin: 0 0.5vw;
+  padding: 0 0.5vw;
+}
+
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
   .card-grid {
     display: grid;
@@ -272,11 +286,13 @@ img {
       "sub-card4";
   }
 
-  .sub-section {
-    padding: 0 0.5rem;
-  }
+  .contact-details.sub-section{
+    margin-left: 0;
+    padding: 0;
+  } 
+  
 
-  .contact-details ul {
+  .sub-section ul{
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -340,5 +356,10 @@ img {
     height: auto;
     width: 10rem;
     text-wrap: wrap;
+  }
+
+  .profile-image{
+    top: 1rem;
+    left: 1.5rem;
   }
 }
