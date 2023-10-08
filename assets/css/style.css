@@ -1,3 +1,4 @@
+/*Added root scoped css variables for colour and style theming */
 :root {
   --theme1: #2D060B;
   --theme2: #92243D;
@@ -32,23 +33,36 @@ p {
   margin: 0;
 }
 
+/* Anchor links and hovering gathered here*/
+/* Sets the default color for all a tags on the page and removes the text-decoration*/
+
 a {
   text-decoration: none;
   color: var(--theme1)
 }
 
+/* Sets a hover color for the links in the nav-bar */
 header a:hover {
   color: var(--theme3)
 }
+
+/* Sets a different hover color for the links in the contact section*/
+.contact a:hover {
+  color: var(--theme5);
+}
+
 
 nav{
   margin-right: 3rem;
 }
 
+/* Added this so that images re-size to cover their parent-containers*/
 img {
   object-fit: cover;
 }
 
+/* Section: Header */
+/*set the min-width to 90vw so that the justify-content allows space for the defined margins. at 100vw the card always gets jammed against the side of the browser window*/
 .main-header {
   display: flex;
   justify-content: space-between;
@@ -60,6 +74,7 @@ img {
   align-items: flex-end;
 }
 
+/*Adds the pinkish background and sets up the padding and margins*/
 .header-card-style {
   margin: 0 1rem;
   padding: 0.5rem 0.5rem;
@@ -68,6 +83,7 @@ img {
   border-radius: var(--theme-radius);
 }
 
+/* Changes the style of the unordered lists to be a flex row where they appear within the nav-bar and contact-details parents*/
 .nav-bar ul,
 .contact-details ul {
   display: flex;
@@ -76,21 +92,18 @@ img {
   padding: 0;
 }
 
+/* Sets up the margins and font-size for each individual list item*/
 .nav-bar li {
   display: flex;
   margin: 0 0.8rem 0 0.8rem;
   font-size: 1.2rem;
 }
 
-.contact-details {
-  width: 1120px;
-  font-size: 20px;
-}
+/* Section End: Header*/
 
-.contact-details li {
-  margin-left: 10%;
-}
+/* Section: Hero*/
 
+/*added this wrapper class to aid the absolute positioning of its children*/
 .hero-wrapper {
   position: relative;
   min-height: 16rem;
@@ -98,6 +111,7 @@ img {
   background-color: var(--theme5);
 }
 
+/* Absolutely positioned the profile image above the hero on z-index:2 */
 .profile-image {
   position: absolute;
   top: 2rem;
@@ -108,6 +122,7 @@ img {
   z-index: 2;
 }
 
+/* Absolutely positioned the hero banner above the hero-wrapper on z-index:1 and gave it an opacity of 0.66 so that it gets tinted by the background-color of the hero wrapper.*/
 .hero-banner {
   position: absolute;
   min-height: 16rem;
@@ -120,6 +135,7 @@ img {
   z-index: 1;
 }
 
+/* Absolutely positioned the sub-heading and set up its visual style*/
 .hero-banner h2 {
   position: absolute;
   right: 4rem;
@@ -132,6 +148,11 @@ img {
   z-index: 2;
 }
 
+/* Section End: Hero*/
+
+/* Section: Main Content */
+
+/* Controls the borders and flow around the main content, it is a flex column*/
 .page-wrapper {
   display: flex;
   flex-direction: column;
@@ -141,18 +162,13 @@ img {
   border-radius: var(--theme-radius);
 }
 
+/* Nests justified flex rows*/
 .page-section {
   position: relative;
   display: flex;
   justify-content: space-between;
   padding: 1rem;
   color: var(--theme5);
-}
-
-#about {
-
-  height: auto;
-
 }
 
 .page-section h2 {
@@ -167,6 +183,7 @@ img {
   width: 80rem;
 }
 
+/* This is a nested grid for the image anchors and their title cards. Sets up the main-card as larger than the other cards*/
 .card-grid {
   display: grid;
   height: auto;
@@ -209,6 +226,7 @@ img {
   position: relative;
 }
 
+/* Absolutely positions the overlay onto the anchor image*/
 .title-overlay {
   position: absolute;
   bottom: 2rem;
@@ -221,21 +239,20 @@ img {
   background-color: antiquewhite;
 }
 
+/* Minor change here makes a big viual difference*/
 .title-overlay h4 {
   padding: 1rem 0;
 }
 
+/* Controls how the image fits into its grid.  Discovered that if i set these down a percentage or 2 each it creates a cool effect with the subsequent css transition */
 .sub-image-style {
   border-radius: var(--theme-radius);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   width: 99%;
   height: 98%;
   border: 2px solid black;
 }
 
-
+/* These are defined here so that a cool box-shadow effect appears on hovering over any of the grid-items*/
 #main-card,
 #sub-card1,
 #sub-card2,
@@ -255,11 +272,18 @@ img {
     0px 0px 23px rgb(110, 13, 65);
 }
 
-.contact a:hover {
-  color: var(--theme5);
+/* The collection of styles here helps to ensure a good looking contact section*/
+.contact-details {
+  width: 1120px;
+  font-size: 20px;
 }
 
-.contact-details li{
+.contact-details ul {
+  margin: 0 0.5vw;
+  padding: 0 0.5vw;
+}
+
+.contact-details li { 
   margin-left: 2vw;
 }
 
@@ -268,12 +292,12 @@ img {
   padding: 0rem;
 } 
 
-.sub-section ul{
-  margin: 0 0.5vw;
-  padding: 0 0.5vw;
-}
+/* Section End: Main Content*/
+
+/* Section: Media Queries*/
 
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
+/* card-grid needs to be re-arranged into 1 column */
   .card-grid {
     display: grid;
     height: auto;
@@ -287,18 +311,21 @@ img {
       "sub-card4";
   }
 
+  /*need to change the margins here */
   .contact-details.sub-section{
     margin-left: 0;
     padding: 0;
   } 
   
-
+  /* Need to change the direction of how the links appear to save space*/
   .sub-section ul{
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
   }
+
+  /* Saving space on margins and padding */
 
   .contact-details li {
     margin: 0;
@@ -313,6 +340,7 @@ img {
 
 
 @media only screen and (max-width: 768px) {
+ /*card-grid needs to be changed into a single column*/
   .card-grid {
     display: grid;
     height: auto;
@@ -327,10 +355,12 @@ img {
       "sub-card4";
   }
 
+  /* Making savings on padding and margins */
   .sub-section {
-    padding: 0 0.5rem;
+    padding: 0 0.2rem;
   }
 
+  /* Sets the ul to a column to save space */
   .contact-details ul {
     display: flex;
     flex-direction: column;
@@ -338,10 +368,15 @@ img {
     padding: 0;
   }
 
+  /* saving space on margins and paddings */
   .contact-details li {
     margin: 0;
     padding-bottom: 1rem;
     width: 300px;
+  }
+
+  .page-section {
+    padding: 0;
   }
 
   .page-section h2 {
@@ -349,18 +384,20 @@ img {
   }
 
   .page-wrapper {
-    margin: 1rem 1rem;
+    margin: 1rem 0;
     padding: 0;
   }
 
-  .hero-banner h2{
+  .hero-banner h2 {
     height: auto;
-    width: 10rem;
+    width: 9rem;
     text-wrap: wrap;
   }
 
-  .profile-image{
+  .profile-image {
     top: 1rem;
     left: 1.5rem;
   }
 }
+
+/* Section End: Media Queries */
