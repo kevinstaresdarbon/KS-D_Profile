@@ -54,7 +54,7 @@ header a:hover {
 }
 
 
-nav{
+nav {
   margin-right: 3rem;
 }
 
@@ -78,7 +78,7 @@ img {
 }
 
 /* Makes the nav look more sensibly positioned */
-nav{
+nav {
   align-self: flex-end;
 }
 
@@ -115,7 +115,7 @@ nav{
 .hero-wrapper {
   position: relative;
   min-height: 16rem;
-  min-width: 100vw;
+  min-width: 95vw;
   background-color: var(--theme5);
 }
 
@@ -136,7 +136,7 @@ nav{
   height: 16rem;
   width: 100%;
   top: 0;
-  left:0;
+  left: 0;
   background-image: url("../images/02-hero-bg.jpg");
   background-size: cover;
   background-position: center;
@@ -293,21 +293,22 @@ nav{
   padding: 0 0.5vw;
 }
 
-.contact-details li { 
+.contact-details li {
   margin-left: 2vw;
 }
 
-.contact-details.sub-section{
+.contact-details.sub-section {
   margin-left: 0rem;
   padding: 0rem;
-} 
+}
 
 /* Section End: Main Content*/
 
 /* Section: Media Queries*/
 
-@media only screen and (min-width: 769px) and (max-width: 1200px) {
-/* card-grid needs to be re-arranged into 1 column */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+
+  /* card-grid needs to be re-arranged into 1 column */
   .card-grid {
     display: grid;
     height: auto;
@@ -322,13 +323,13 @@ nav{
   }
 
   /*need to change the margins here */
-  .contact-details.sub-section{
+  .contact-details.sub-section {
     margin-left: 0;
     padding: 0;
-  } 
-  
+  }
+
   /* Need to change the direction of how the links appear to save space*/
-  .sub-section ul{
+  .sub-section ul {
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -349,20 +350,24 @@ nav{
 }
 
 
-@media only screen and (max-width: 768px) {
- 
-  .page-wrapper{
-    margin: 1rem 1rem;
+@media only screen and (max-width: 767px) {
+
+  .page-wrapper {
+    margin: 1rem 0rem;
   }
 
   /* The cool subtitle needs to move*/
- .hero-banner h2 {
-    right: 0.5rem; 
-    height: auto;
+  .hero-banner h2 {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 1rem;
+    height: 3rem;
     font-size: 20px;
-    width: 7rem;
-    text-wrap: wrap;
- }
+    width: auto;
+    text-wrap: no-wrap;
+    margin-top: 1.2rem;
+  }
+
 
   /*card-grid needs to be changed into a single column*/
   .card-grid {
@@ -417,6 +422,90 @@ nav{
   .profile-image {
     top: 1rem;
     left: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 359px) {
+
+  .page-wrapper {
+    margin: 1rem 1rem;
+  }
+
+  /* The cool subtitle needs to move*/
+  .hero-banner h2 {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 1rem;
+    height: 3rem;
+    font-size: 20px;
+    width: auto;
+    text-wrap: no-wrap;
+    margin-top: 1.2rem;
+  }
+
+  /*card-grid needs to be changed into a single column*/
+  .card-grid {
+    display: grid;
+    height: auto;
+    width: 65vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 28rem 20rem 20rem 20rem 20rem;
+    grid-template-areas:
+      "main-card"
+      "sub-card1"
+      "sub-card2"
+      "sub-card3"
+      "sub-card4";
+  }
+
+  /* Making savings on padding and margins */
+  .sub-section {
+    padding: 0 0.2rem;
+  }
+
+  /* Sets the ul to a column to save space */
+  .nav-bar ul,
+  .contact-details ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* saving space on margins, paddings and font-sizes*/
+  .contact-details li {
+    margin: 0;
+    padding-bottom: 1rem;
+    width: 300px;
+    font-size: 14px;
+  }
+
+  .page-section {
+    padding: 0;
+  }
+
+  .page-section h2 {
+    padding: 0 1rem 0 0.8rem;
+  }
+
+  .page-wrapper {
+    margin: 1rem 0rem;
+    padding: 0;
+  }
+
+  .profile-image {
+    top: 1rem;
+    left: 1.5rem;
+  }
+
+  .title-overlay {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    height: auto;
+    width: 8rem;
+    padding: 1rem;
+    font-size: 0.9rem;
   }
 }
 
