@@ -155,7 +155,6 @@ nav {
   color: var(--theme4);
   border-radius: var(--theme-radius);
   font-size: 1.8rem;
-  z-index: 2;
 }
 
 /* Section End: Hero*/
