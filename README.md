@@ -2,48 +2,70 @@
 
 ## Description
 
-I have authored this webpage so that it can serve as a home for my professional 
+I have authored this webpage so that it can serve as a home for my professional portfolio and profile.
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+I want to have the design and content showcase my proficiency in web-development.
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+This project helps me to control the look and content of my online profile.
 
-## Table of Contents (Optional)
+Whilst doing this project I learned how tricky it can be to use media queries to make the content responsive to all viewing devices.
 
-If your README is long, add a table of contents to make it easy for users to find what they need.
+## Table of Contents
+
+Included for your ease of use is a table of contents
 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
+- [Screenshots](#screenshots)
 - [License](#license)
 
 ## Installation
-
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+  
+If you wish to work on the files for this project you can clone it onto your machine and drag the index.html in your browser's url bar to open it using the file protocol.  
+  
+```Git clone command```  
+```
+git clone git@github.com:kevinstaresdarbon/KS-D_Profile.git  
+```
+  
+if you simply wish to view the page you can use this link:  
+[KS-D_Profile](https://kevinstaresdarbon.github.io/KS-D_Profile/)
 
 ## Usage
-
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
-
+  
+This webpage constitutes my profile and contains my image, my name, links to my work and links with which to contact me.  
+  
+If you are interested in my work please contact me using the links provided.  
+  
 ## Credits
+  
+The starter code at the initial starter commit, including the image files, HTML and CSS, was provided by the staff of edX.  
+All commits after that is original work done by myself.  
+No collaboration was needed or taken on this repository and code.  
+  
+I used [colormind.io](http://colormind.io/) to develop the theme colors for this website  
+  
+The template and advice for this README was taken from this site:  
+<https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide>  
+  
+## Screenshots  
+  
+Below are the screenshots of the finished website:  
+  
+Above 1200px wide:  
+![Alt Desktop](./assets/images/screenshot_Above1200pxWide.jpg)  
+  
+Between 768 and 1199 pixels wide:  
+![Alt Large_Tablet](./assets/images/screenshot_between_768_1199.jpg)  
+  
+between 360 and 767 pixels wide:  
+![Alt Smaller_Device](./assets/images/screenshot_between_360_and_767.jpg)  
+  
+359 pixels and below:  
+![Alt Small_Phone](./assets/images/screenshot_below_359.jpg)  
+  
+## License  
+  
+MIT License citation is supplied [HERE](./LICENSE)
 
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
-
-## License
-
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
----
