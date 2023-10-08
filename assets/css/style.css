@@ -77,6 +77,11 @@ img {
   align-items: flex-start;
 }
 
+/* Makes the nav look more sensibly positioned */
+nav{
+  align-self: flex-end;
+}
+
 /*Adds the pinkish background and sets up the padding and margins*/
 .header-card-style {
   margin: 0 1rem;
