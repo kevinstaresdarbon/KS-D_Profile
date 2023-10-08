@@ -6,6 +6,7 @@
   --theme4: #FBA7AA;
   --theme5: #800D98;
   --theme-radius: 8px;
+  --theme-border-style: 3px solid #d4324a;
 }
 
 * {
@@ -89,6 +90,7 @@ nav {
   color: var(--theme1);
   background-color: var(--theme4);
   border-radius: var(--theme-radius);
+  border: var(--theme-border-style);
 }
 
 /* Changes the style of the unordered lists to be a flex row where they appear within the nav-bar and contact-details parents*/
@@ -127,7 +129,8 @@ nav {
   width: 200px;
   height: 200px;
   border-radius: var(--theme-radius);
-  z-index: 2;
+  border: var(--theme-border-style);
+  z-index: 3;
 }
 
 /* Absolutely positioned the hero banner above the hero-wrapper on z-index:1 and gave it an opacity of 0.66 so that it gets tinted by the background-color of the hero wrapper.*/
@@ -146,7 +149,7 @@ nav {
 }
 
 /* Absolutely positioned the sub-heading and set up its visual style*/
-.hero-banner h2 {
+.hero-wrapper h2 {
   position: absolute;
   right: 4rem;
   bottom: 2rem;
@@ -154,7 +157,10 @@ nav {
   background-color: var(--theme5);
   color: var(--theme4);
   border-radius: var(--theme-radius);
+  border: var(--theme-border-style);
   font-size: 1.8rem;
+  z-index: 2;
+  opacity: 1;
 }
 
 /* Section End: Hero*/
@@ -169,6 +175,7 @@ nav {
   padding: 0rem 2rem;
   background-color: var(--theme4);
   border-radius: var(--theme-radius);
+  border: var(--theme-border-style);
 }
 
 /* Nests justified flex rows*/
@@ -256,9 +263,9 @@ nav {
 /* Controls how the image fits into its grid.  Discovered that if i set these down a percentage or 2 each it creates a cool effect with the subsequent css transition */
 .sub-image-style {
   border-radius: var(--theme-radius);
+  border: var(--theme-border-style);
   width: 99%;
   height: 98%;
-  border: 2px solid black;
 }
 
 /* These are defined here so that a cool box-shadow effect appears on hovering over any of the grid-items*/
@@ -351,12 +358,17 @@ nav {
 
 @media only screen and (max-width: 767px) {
 
+  .main-header {
+    margin: 0;
+  }
+
   .page-wrapper {
     margin: 1rem 0rem;
+    width: 100%;
   }
 
   /* The cool subtitle needs to move*/
-  .hero-banner h2 {
+  .hero-wrapper h2 {
     position: absolute;
     bottom: 0.5rem;
     right: 1rem;
@@ -372,9 +384,9 @@ nav {
   .card-grid {
     display: grid;
     height: auto;
-    width: 65vw;
-    grid-template-columns: 1fr;
-    grid-template-rows: 28rem 20rem 20rem 20rem 20rem;
+    width: 80vw;
+    grid-template-columns: 85%;
+    grid-template-rows: 18rem 14rem 14rem 14rem 14rem;
     grid-template-areas:
       "main-card"
       "sub-card1"
@@ -422,16 +434,16 @@ nav {
     top: 1rem;
     left: 1.5rem;
   }
+
+  .title-overlay {
+    font-size: 0.8rem;
+  }
 }
 
 @media only screen and (max-width: 359px) {
 
-  .page-wrapper {
-    margin: 1rem 1rem;
-  }
-
   /* The cool subtitle needs to move*/
-  .hero-banner h2 {
+  .hero-wrapper h2 {
     position: absolute;
     bottom: 0.5rem;
     right: 1rem;
@@ -447,8 +459,8 @@ nav {
     display: grid;
     height: auto;
     width: 65vw;
-    grid-template-columns: 1fr;
-    grid-template-rows: 28rem 20rem 20rem 20rem 20rem;
+    grid-template-columns: 18rem;
+    grid-template-rows: 20rem 12rem 12rem 12rem 12rem;
     grid-template-areas:
       "main-card"
       "sub-card1"
@@ -490,6 +502,15 @@ nav {
   .page-wrapper {
     margin: 1rem 0rem;
     padding: 0;
+    width: 140%;
+  }
+
+  .main-header {
+    width: 140%;
+  }
+
+  .hero-wrapper {
+    width: 140%;
   }
 
   .profile-image {
@@ -503,8 +524,8 @@ nav {
     left: 1rem;
     height: auto;
     width: 8rem;
-    padding: 1rem;
-    font-size: 0.9rem;
+    padding: 0.6rem;
+    font-size: 0.7rem;
   }
 }
 
