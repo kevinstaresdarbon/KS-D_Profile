@@ -126,7 +126,7 @@ img {
 .hero-banner {
   position: absolute;
   min-height: 16rem;
-  min-width: 100vw;
+  min-width: 100%;
   background-image: url("../images/02-hero-bg.jpg");
   background-size: cover;
   background-position: center;
@@ -340,7 +340,18 @@ img {
 
 
 @media only screen and (max-width: 768px) {
- /*card-grid needs to be changed into a single column*/
+ 
+
+
+  /* The cool subtitle needs to move*/
+ .hero-banner h2 {
+    right: 0.5rem; 
+    height: auto;
+    width: 10rem;
+    text-wrap: wrap;
+ }
+
+  /*card-grid needs to be changed into a single column*/
   .card-grid {
     display: grid;
     height: auto;
@@ -386,12 +397,6 @@ img {
   .page-wrapper {
     margin: 1rem 0;
     padding: 0;
-  }
-
-  .hero-banner h2 {
-    height: auto;
-    width: 9rem;
-    text-wrap: wrap;
   }
 
   .profile-image {
