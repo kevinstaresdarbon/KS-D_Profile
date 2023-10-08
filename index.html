@@ -11,6 +11,8 @@
 
 <body>
   <!-- main logo / nav -->
+  <!--  Added section links here in the nav that move to the named sections {about, work, contact} correctly -->
+  <!-- main-header is a flex container for responsiveness-->
   <header class="main-header">
     <h1 class="header-card-style">Kevin Stares-Darbon</h1>
     <nav class="nav-bar header-card-style">
@@ -23,19 +25,25 @@
   </header>
 
   <!-- hero banner -->
-  <div class="backdrop">
+  <!-- added the hero-wrapper to help place the profile-image absolutely above the banner on z-index: 2; so that it doesn't interact with the opque background of the hero-banner-->
+  <div class="hero-wrapper">
+    <!-- Added my profile image here-->
     <img src="./assets/images/ksd-profile-image.jpg" class="profile-image" />
+    <!-- gave the hero-banner an opacity of 0.66 to give a purple tinting to the background-image from the background color of the hero wrapper. Also makes the background-image feel more subtle on the page-->
     <section class="hero-banner">
+      <!-- Cool sub-title changed here-->
       <div>
         <h2>Web Developer for Hire</h2>
       </div>
     </section>
   </div>
 
+  <!-- Set the page-wrapper to be have flex in the column direction and adds appropriate borders-->
   <main class="page-wrapper">
     <!-- about me -->
     <section id="about">
-
+      <!-- Every page-section is a flex row-->
+      <!-- Added a div containing the information for the about-->
       <article class="page-section">
         <h2>About Me</h2>
         <div class="sub-section">
@@ -47,16 +55,24 @@
           <h3>I am currently taking the "edX: Front-End Web Development Bootcamp</h3>
         </div>
       </article>
-
     </section>
 
     <!-- portfolio container -->
     <section id="work">
+      <!-- This is a flex row because of the page-section class-->
       <article class="page-section">
         <h2>Work</h2>
         <div class="sub-section">
+          <!-- card-grid is a CSS Grid nested within the flex row for responsiveness it is setup so that the main-card is larger than the sub-cards-->
           <div class="card-grid">
             <div id="main-card">
+              <!--  The <img> tags are wrapped in <a> tags to make them clickable anchors containing relevant images-->
+              <!-- a link is provided here to my version of Simon's Game.  It was built as part of Dr. Angela Yu's course on udemy; "The Complete 2023 Web Development Bootcamp" -->
+              <!-- targets are set to _blank so that the links open in a new window, wouldn't want the viewer to lose track of my profile!!-->
+              <!-- Added an appropriate screen snippet of the SimonGame webpage for the clickable link image -->
+              <!-- Added the title over-lay div to be absolutely position above each link-->
+              <!-- The css for here adds a nice animation to the links when the pointer hovers over them-->
+              <!-- added the div title-overlay to be positioned absolutely upon each link-->
               <a href="https://kevinstaresdarbon.github.io/SimonGame/" target="_blank">
                 <img src="./assets/images/simon-game.jpg" class="sub-image-style" />
                 <div class="title-overlay">
@@ -66,6 +82,8 @@
               </a>
             </div>
             <div id="sub-card1">
+              <!-- The link for this sub-card goes to the mini-project from the 5/10/23 which I made a repo and gh page of, the snippet-cheatsheet.  It felt to be the most appropriate option -->
+              <!-- Added an appropriate screen snippet of the gh page snippet_cheatsheet as the clickable image-->
               <a href="https://kevinstaresdarbon.github.io/snippet_cheatsheet/" target="_blank">
                 <img src="./assets/images/css-snippets.jpg" class="sub-image-style" />
                 <div class="title-overlay">
@@ -75,6 +93,7 @@
               </a>
             </div>
             <div id="sub-card2">
+              <!-- sub-cards 2, 3 and 4 are placeholders with blank links-->
               <a href="#">
                 <img src="./assets/images/02-portfolio-3.jpg" class="sub-image-style" />
                 <div class="title-overlay">
@@ -108,8 +127,11 @@
     </section>
 
     <!-- contact -->
+    <!-- This is a flex row because of the page-section class-->
     <section class="page-section contact" id="contact">
       <h2>Contact Me</h2>
+      <!--Added 3 links here, a tel link, a mailto link and a direct link to my github-profile that opens in a new tab so my profile page here stays visible aswell. -->
+      <!-- The telephone and mailto link details are also displayed on the link in-case the links fail to work-->
       <div class="contact-details sub-section">
         <ul>
           <li> <a href="tel:07906330368">Mobile: 07906330368</a> </li>

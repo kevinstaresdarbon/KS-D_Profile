@@ -91,7 +91,7 @@ img {
   margin-left: 10%;
 }
 
-.backdrop {
+.hero-wrapper {
   position: relative;
   min-height: 16rem;
   min-width: 100vw;
