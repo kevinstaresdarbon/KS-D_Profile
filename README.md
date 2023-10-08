@@ -53,19 +53,19 @@ The template and advice for this README was taken from this site:
   
 ## Screenshots  
   
-Below are the screenshots of the website (they're slightly outdated with a few minor changes to borders and margins):  
+Below are the screenshots of the website at different resolutions:  
   
 Above 1200px wide:  
-![Alt Desktop](./assets/images/screenshot_Above1200pxWide.jpg)  
+![Alt Desktop](./assets/images/screenshot@1920x1080.png)  
   
 Between 768 and 1199 pixels wide:  
-![Alt Large_Tablet](./assets/images/screenshot_between_768_1199.jpg)  
+![Alt Large_Tablet](./assets/images/screenshot@1024x600.png)  
   
 between 360 and 767 pixels wide:  
-![Alt Smaller_Device](./assets/images/screenshot_between_360_and_767.jpg)  
+![Alt Smaller_Device](./assets/images/screenshot@540x720.png)  
   
-359 pixels and below:  
-![Alt Small_Phone](./assets/images/screenshot_below_359.jpg)  
+360 pixels:  
+![Alt Small_Phone](./assets/images/screenshot@360x740.png)  
   
 ## License  
   
