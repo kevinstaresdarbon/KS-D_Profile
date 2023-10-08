@@ -46,12 +46,14 @@ No collaboration was needed or taken on this repository and code.
   
 I used [colormind.io](http://colormind.io/) to develop the theme colors for this website  
   
+I used <https://www.icongeneratorai.com/> to generate the favicon png  
+  
 The template and advice for this README was taken from this site:  
 <https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide>  
   
 ## Screenshots  
   
-Below are the screenshots of the finished website:  
+Below are the screenshots of the website (they're slightly outdated with a few minor changes to borders and margins):  
   
 Above 1200px wide:  
 ![Alt Desktop](./assets/images/screenshot_Above1200pxWide.jpg)  
