@@ -364,7 +364,7 @@ nav {
 
   .page-wrapper {
     margin: 1rem 0rem;
-    width: 100%;
+    max-width: 90%;
   }
 
   /* The cool subtitle needs to move*/
@@ -384,8 +384,8 @@ nav {
   .card-grid {
     display: grid;
     height: auto;
-    width: 80vw;
-    grid-template-columns: 85%;
+    width: 75vw;
+    grid-template-columns: 75%;
     grid-template-rows: 18rem 14rem 14rem 14rem 14rem;
     grid-template-areas:
       "main-card"
