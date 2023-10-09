@@ -121,7 +121,7 @@ nav {
   background-color: var(--theme5);
 }
 
-/* Absolutely positioned the profile image above the hero on z-index:2 */
+/* Absolutely positioned the profile image above the hero on z-index:3 */
 .profile-image {
   position: absolute;
   top: 2rem;
@@ -148,7 +148,7 @@ nav {
   z-index: 1;
 }
 
-/* Absolutely positioned the sub-heading and set up its visual style*/
+/* Absolutely positioned the sub-heading and set up its visual style on z-index 2*/
 .hero-wrapper h2 {
   position: absolute;
   right: 4rem;
@@ -364,7 +364,8 @@ nav {
 
   .page-wrapper {
     margin: 1rem 0rem;
-    max-width: 90%;
+    min-width: 99%;
+    padding: 0;
   }
 
   /* The cool subtitle needs to move*/
@@ -384,8 +385,8 @@ nav {
   .card-grid {
     display: grid;
     height: auto;
-    width: 75vw;
-    grid-template-columns: 75%;
+    width: 77vw;
+    grid-template-columns: 85%;
     grid-template-rows: 18rem 14rem 14rem 14rem 14rem;
     grid-template-areas:
       "main-card"
@@ -425,18 +426,17 @@ nav {
     padding: 0 1rem 0 0.8rem;
   }
 
-  .page-wrapper {
-    margin: 1rem 0rem;
-    padding: 0;
-  }
-
   .profile-image {
     top: 1rem;
     left: 1.5rem;
   }
 
   .title-overlay {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+    padding: 0.7rem 0.4rem;
+    height:auto;
+    text-wrap: wrap;
+    max-width: 8rem;
   }
 }
 
@@ -502,7 +502,7 @@ nav {
   .page-wrapper {
     margin: 1rem 0rem;
     padding: 0;
-    width: 140%;
+    min-width: 140%;
   }
 
   .main-header {
